@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+            
+        } </style>
+
+
+
+
+</head>
+<body> 
+    <link rel="stylesheet" type="text/css" href="/estilo.css">
+
+
+
+    <p style="color:blue;"> e-mail padrão para envio do certificado </p>
+    
+    
+    Selecione uma opção: <br>
+    <input type="radio" id="sim" name="grupo1" onchange="idioma()" />  <label for="sim"> Português </label>    <br>  
+    <input type="radio" id="não" name="grupo1" onchange="idioma()" />  <label for="não"> Inglês </label>  <br> 
+
+    <input type="radio" id="sim2" name="grupo1" onchange="idioma2()" /> <label for="sim2"> Português, devendo atualização de norma  </label>  <br>   
+    <input type="radio" id="não2" name="grupo1" onchange="idioma2()" /> <label for="não2"> Inglês, devendo atualização de norma </label>  <br> <br>
+    
+
+
+    ----------------------------------------- Início do e-mail ----------------------------------------- <br> <br>
+        <container1 id="memoria1">  </container1> <br> 
+
+
+     
+        <table>
+            <tr> <!-- Criar linha na tabel - essa é a linha do cabçalho-->
+                <th style="background-color: rgb(151, 204, 239);">
+                    <containerB id="containerB"> </containerB>
+                </th>
+
+                <th style="background-color: rgb(151, 204, 239);">
+                    <containerC id="containerC">  </containerC> <br>  
+                </th>
+            </tr> 
+    
+            <tr> <!-- Linhas de registros da tabela LINHA 1 --> 
+                <td>  xxxxxxxx. </td>
+                <td> xxxxxxxx</td>
+            </tr> 
+  
+        </table>
+
+
+
+
+<br> <br>
+    ----------------------------------------- fim do e-mail ----------------------------------------- <br>
+    e-mail padrão publicado em 01/04/2025
+
+
+    
+
+    <script src = "Certificado.js"></script> 
+</body>
+</html>
+
+
+
+<!--   comentários
+
+<button onclick="copiarTexto">copiar</button>
+
+-->

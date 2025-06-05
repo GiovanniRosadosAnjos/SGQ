@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">BUILTIN\Administrators</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">97600.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">BUILTIN\Administrators</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x01010013FD89FCC0F6844BA279179CFFDBE1FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <script src="../../Comum/Auditoria/AnaliseRisco.js"></script>
+
+    <select name="tipoProduto" id="SelecioneUmProduto" onchange="aualizouProduto()">
+        <option value="Escolher" disabled selected>Selecione o tipo de certificação</option>
+        <option value="inicial">Certificação inicial</option>
+        <option value="Manutenção"> Manutenção </option>
+        <option value="recertificação">recertificação</option>
+        <option value="encerramento">encerramento</option>
+    </select> <br> <br>
+
+    A planta fabril se encontra em funcionamento, com a linha de produção ativa? <br>
+
+    <input type="radio" id="sim" name="fabricaAberta" value="sim" onchange="plantaFabrilAtiva()" />
+    <label for="sim"> Sim </label>
+    
+    <input type="radio" id="não" name="fabricaAberta" value="não" onchange="plantaFabrilAtiva()" />
+    <label for="não">Não </label>  <br> <br>
+
+
+
+    <suspender id="suspender">  </suspender> <!--contnainer-->
+
+    <br><br><br>
+
+    <a href="../../Comum/Auditoria/AnaliseRiscoListaDocs.html">Lista de documentos para análise de risco</a> <br> <br>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Estilo para as tabelas de Avaliação da Conformidade */
+table {
+  font-family: "Century Gothic";
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #62aae9;
+  color: #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #0722e9;
+}
+
+/* Ajusta a primeira coluna para ter largura mínima de 200px, mas ainda ser flexível */
+td:first-child {
+  min-width: 400px;
+  width: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Adicionando cor verde para a segunda coluna da segunda tabela */
+table:nth-of-type(2) td:nth-child(2) {
+  background-color: #d4edda;
+}
+
+
+

@@ -1,0 +1,51 @@
+body {
+    font-family: "Century Gothic";
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+.bloco1 {
+    background-color: rgb(6, 143, 235);
+}
+
+.bloco2 {
+    background-color: rgb(69, 94, 235);
+}
+
+.bloco3 {
+    background-color: rgb(46, 224, 135);
+}
+
+.item {
+    background-color: rgb(151, 204, 239);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container2:hover > :not(:hover) {
+    opacity: 0.4;
+    transform: scale(0.8);
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+

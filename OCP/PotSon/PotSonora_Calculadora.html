@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potência Sonora</title>
+
+    <script src="inteligencia.js" defer></script>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">BUILTIN\Administrators</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">101600.000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">BUILTIN\Administrators</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x01010013FD89FCC0F6844BA279179CFFDBE1FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    
+    Potência Sonora <br> <br>
+
+    
+    
+
+        <form>
+            <input type="number"    name="valor1"   id="valor1"    onchange="aualizouProduto()"> 
+            <input type="number"    name="valor2"    id="valor2"   onchange="aualizouProduto()">
+            <input type="number"    name="valor3"    id="valor3"   onchange="aualizouProduto()"> 
+                  
+
+            <input type="submit"  id="send" value="Calcular"> <br> <br>
+                Soma.......................:  <container id="soma"> </container> <br>
+                Média .....................: <container id="media"> </container> <br>
+                Média Arredondada.: <container id="mediaArred"> </container> <br>
+                Total final.................: <container id="final"> </container> <br> <br>
+
+
+                Produto.................: <container id="produtoSelecionado"> </container> <br> <br>
+
+            <select name="tipoProduto" id="SelecioneUmProduto" onchange="aualizouProduto()">
+                <option value="Escolher" disabled selected>Selecione o tipo de produto</option>
+                <option value="Aspirador">Aspirador de Pó</option>
+                <option value="Secador">Secador de Cabelo</option>
+                <option value="Liquidificador">Liquidificador</option>
+            </select>
+
+
+        </form>
+
+   
+</body>
+</html>

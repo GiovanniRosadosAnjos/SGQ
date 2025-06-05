@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+            
+        } </style>
+
+
+
+
+</head>
+<body> 
+    <link rel="stylesheet" type="text/css" href="/estilo.css">
+
+    
+    Selecione um item abaixo:  <br>
+    <select name="tipoProduto" id="IdentificadorProduto" onchange="aualizouProduto()">
+        <option value="Selecionar" disabled selected>Selecione uma Atividade </option>
+        <option value="A1PT">Start de Manutenção - com necessidade de atualização de Norma</option>
+        <option value="A2PT">Start de Manutenção - SEM necessidade de atualização de Norma</option>
+
+        <option value="B1PT">Envio de pendências - com necessidade de atualização de norma</option>
+        <option value="B2PT">Envio de pendências - SEM necessidade de atualização de norma</option>
+    </select>
+    
+    
+   
+    <p id="TipoDeManutenção"    style="color:blue; background-color:rgb(151, 204, 239);"> xxxxxxxxxxxxxxx </p>
+    
+
+    <container id="linha1">   </container>
+
+       
+
+
+   
+
+        <!-- INICIO DA TABELA -->
+       
+        <div id = "Tabela"> 
+        <table id="tabela1">
+            <tr> 
+                <th style="background-color: rgb(151, 204, 239);">
+                    <container1 id="tb1.1"> </container1>
+                </th>
+
+                <th>
+                    xxxxxxxxx
+                </th>
+            </tr> 
+    
+            <tr> 
+                <td>  <container2 id="tb1.2"> </container2> </td>
+                <td> xxxxxxxxx</td>
+            </tr> 
+
+            <tr> 
+                <td>  <container6 id="tb1.3">  </container6> </td>
+                <td> xxxxxxxxx</td>
+            </tr> 
+          </table> <br>  <!-- FIM DA TABELA -->  </div>
+
+
+          <container id="linha2">   </container>
+
+
+
+<p style="color:blue; background-color:rgb(151, 204, 239);"> -------- Fim do e-mail </p>
+e-mail padrão elaborado em 02/04/2025
+        
+           <script src = "Manut_Start_Ret.js"></script> 
+</body>
+</html>
+
+
+
+<!--   comentários
+
+<button onclick="copiarTexto">copiar</button>
+
+-->

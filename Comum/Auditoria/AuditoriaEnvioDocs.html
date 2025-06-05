@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pr-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">BUILTIN\Administrators</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">98200.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">BUILTIN\Administrators</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x01010013FD89FCC0F6844BA279179CFFDBE1FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+
+
+    <script src="AuditoriaEnvioDocs.js"></script>
+
+   Selecione o escopo <br> <br>
+   <div>
+    <input type="radio" id="Medical" name="escopo" value="Medical" onchange="emailPadrao()" />
+    <label for="Medical">Medical</label>
+    
+    <input type="radio" id="Eletro" name="escopo" value="Eletro" onchange="emailPadrao()" />
+    <label for="Eletro">Eletro</label>
+
+    <input type="radio" id="OMD" name="escopo" value="OMD" onchange="emailPadrao()" />
+    <label for="OMD">OMD</label>
+    
+    <select name="tipoDocumento" id="tipoDocumento" onchange="emailPadrao()">
+        <option value="Selecionar" disabled selected>Selecione o documento </option>
+        <option value="Plano de Auditoria">Plano de Auditoria</option>
+        <option value="Relatório de Auditoria">Relatório de Auditoria</option>
+        <option value="Registro de Não Conformidade">Registro de Não Conformidade</option>
+    </select> <br>  <br>
+   </div>
+    
+
+    <div style="background-color: rgb(151, 204, 239, 0.5);"> E-mail padrão para envio do RELATÓRIO DE AUDITORIA  </div> <br>
+
+
+    <container id = "assunto"></container> <br> 
+    <container id = "geral"></container> <br>
+
+    <div style="background-color: rgb(151, 204, 239, 0.5);"> Nome do arquivo  </div> 
+    NomeDaEmpresa - Relatório de Auditoria Rev. 01 - Processo - [Mês. Ano]
+
+    <br><br><br>
+
+
+
+
+    
+
+
+
+
+
+    
+</body>
+</html>
